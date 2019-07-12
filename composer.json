@@ -1,0 +1,35 @@
+{
+    "name": "indonusamedia/language",
+    "description": "Language switcher package for Laravel.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "andriynto",
+            "email": "andriyanto@indonusamedia.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": ">=5.4.0",
+        "consoletvs/identify": "1.*"
+    },
+    "autoload": {
+		"psr-4": {
+			"Indonusamedia\\Language\\": "./src"
+		},
+        "files": [
+            "src/helpers.php"
+        ]
+	},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Indonusamedia\\Language\\Provider"
+            ],
+            "aliases": {
+                "Language": "Indonusamedia\\Language\\Facade"
+            }
+        }
+    }
+}
